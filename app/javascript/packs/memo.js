@@ -15,6 +15,7 @@ const html = `
 function post () {
   const submit = document.getElementById("submit");
   submit.addEventListener('click', (e) => {
+    // 要素.addEventListener('イベント名', 関数)
     e.preventDefault();
     const form = document.getElementById("form");
     const formData = new FormData(form);
